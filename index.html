@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to ERP</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-custom">
+        <div class="container1">
+            <div class="Logo">
+                <img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRF_k3-Slby19Vkp8f9nsNyL26WNbNtG4fndD78-uq-bInndI-dD_fZmQMRL8s3kNVNewI&usqp=CAU">
+            </div>
+            <div class="Important a">
+                <a href="#important"> Important</a>
+            </div>
+            <div class="Message a">
+                <a href="#message">Message</a>
+            </div>
+            <div class="Quick Links a">
+                <a href="#quicklink">Quick Links</a>
+            </div>
+            <div class="Security image a">
+                <img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnKzg6S_9lfzlufl_f6rC1ONZXpKELmN7d3WaQfJosMOgJC4YIAuo6PUAxlSk2FQ9ZZvQ&usqp=CAU">
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="login-panel">
+            <div class="panel-heading text-center">
+                <h2>Authentication</h2>
+            </div>
+            <div class="panel-body">
+                <form id="loginForm" action="auth.htm" method="post">
+                    <input type="text" name="user_id" id="user_id" class="form-control"
+                        placeholder="Stakeholder code/login id" required>
+                    <input type="password" name="password" id="password" class="form-control" placeholder="Password"
+                        required>
+                    <div class="form-group mt-2">
+                        <input type="checkbox" id="show_password" onclick="togglePasswordVisibility()"> Show Password
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block mt-3">Sign In</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        © 2024 ERP System, IIT Kharagpur
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
